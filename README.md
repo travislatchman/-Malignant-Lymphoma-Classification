@@ -74,27 +74,26 @@ Accuracy on the test set with the adjusted loss function: 35.38%
 
 In my case, correcting for class imbalance led to a classifier that performed worse, which is not an expected result. I assume I may have done something wrong when calculating the weights. But in training the model after accounting for imbalances, the train loss, train accuracy, validation loss, and validation accuracy does not change. Train Loss: 0.072148  Train Accuracy: 32.00%  Validation Loss: 0.093497  Validation Accuracy: 32.35%
 
-Strictly in terms of the confusion matrices, lets start with confusion matrix before accounting for class imbalance. \\
-Correct predictions: \\
-Class 1: 17 \\
-Class 2: 15 \\
-Class 3: 1 \\
-Incorrect predictions: \\
-1 instance of class 1 predicted as class 2, and 3 instances as class 3 \\
-6 instances of class 2 predicted as class 1 \\
+Strictly in terms of the confusion matrices, lets start with confusion matrix before accounting for class imbalance. 
+Correct predictions: 
+Class 1: 17 
+Class 2: 15 
+Class 3: 1 
+Incorrect predictions: 
+1 instance of class 1 predicted as class 2, and 3 instances as class 3 
+6 instances of class 2 predicted as class 1 
 14 instances of class 3 predicted as class 1, and 8 instances as class 2  
 
 
-\\
 after accounting for the class imbalance, the confusion matrix is 
 
-Correct predictions: \\
-Class 1: 0 \\
-Class 2: 0 \\
-Class 3: 23 \\
-Incorrect predictions: \\
-All 21 instances of class 1 predicted as class 3 \\
-All 21 instances of class 2 predicted as class 3 \\
+Correct predictions: 
+Class 1: 0 
+Class 2: 0 
+Class 3: 23 
+Incorrect predictions: 
+All 21 instances of class 1 predicted as class 3 
+All 21 instances of class 2 predicted as class 3 
 
 Based on the confusion matrices, the first classifier (Confusion Matrix 1) is better overall. Although it has some difficulty in distinguishing between the three classes, it has a higher number of correct predictions for class 1 and class 2.
 
