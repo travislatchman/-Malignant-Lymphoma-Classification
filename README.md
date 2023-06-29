@@ -7,3 +7,5 @@ Transfer Learning using Lymphoma Images
 ### Implementation (please see notebook for each task):
 * Trained a CNN model from scratch for classification.
 * Applied transfer learning techniques on pre-trained models, fine-tuning the last layers to adapt to our specific task.
+
+### **`Task 1 `** 
