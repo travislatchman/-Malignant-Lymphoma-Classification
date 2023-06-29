@@ -32,14 +32,18 @@ For how to construct the dataset, please refer [Reference Link](https://pytorch.
 
 When defining the public values: Images, Labels are the input images and labels for the dataset; Transforms contains the transform parameters
 
-Inputs:  
-    Images: input images in one set, numpy arrays  
-    Labels: input labels in one set, numpy arrays  
-    Transforms: containing the parameters for data transform   
+    """
+When defining the public values: Images, Labels are the input images and labels for the dataset; Transforms contains the transform parameters
+Inputs:
+    Images: input images in one set, numpy arrays
+    Labels: input labels in one set, numpy arrays
+    Transforms: containing the parameters for data transform
 
 
-    *** Please convert the label from index to one-hot:  
-                    index      one-hot  
-              Label CLL: 1       [1,0,0]  
-              Label FL: 2       [0,1,0]  
-              Label MCL: 3       [0,0,1]  
+    *** Please convert the label from index to one-hot:
+                    index      one-hot
+              Label CLL: 1       [1,0,0]
+              Label FL: 2       [0,1,0]
+              Label MCL: 3       [0,0,1]
+
+  """
